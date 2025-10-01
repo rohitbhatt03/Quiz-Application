@@ -1,0 +1,22 @@
+{
+  // Ignore errors for Tailwind v4 custom rules like @theme
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // Disable default CSS validation (so only Tailwind IntelliSense runs)
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+
+  // Map TS/TSX to JS so Tailwind IntelliSense works
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript",
+    "css": "css",
+    "scss": "css"
+  },
+
+  // Optional: auto-format files on save
+  "editor.formatOnSave": true
+}
